@@ -10,7 +10,7 @@ namespace TacticalAI
 {
     public class BaseScript : MonoBehaviour
     {
-        //Base Stuff
+        //Base Stuff   ooo
         //Scripts
         public TacticalAI.GunScript gunScript;
         public TacticalAI.SoundScript audioScript;
