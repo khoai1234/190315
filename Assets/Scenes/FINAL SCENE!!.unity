@@ -4681,19 +4681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6133733dc08b09843a6e67cd17459f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  SightNodeOffSet: {x: 0, y: 1, z: 0}
-  nodeRadiusVisualization: 0.1
-  alwaysDisplay: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  isActive: 1
-  isAdvancedCover: 1
-  angleForAdvancedCover: 100
-  advancedCoverDirection: {x: 0, y: 0, z: 1}
-  shouldAutoChooseDirection: 1
-  faceDir: 0
 --- !u!1001 &115390960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7398,7 +7385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.28
+      value: -143.8
       objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7858,13 +7845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2324fb269f9bc345914ab84bc7481bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  minDistForDynamicCoverSimilarity: 3
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  usePerformanceMode: 0
-  maximumtDistForParkour: 3
 --- !u!4 &206903078
 Transform:
   m_ObjectHideFlags: 0
@@ -7891,22 +7871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c990ad96006d3034d8ab5e7fdecb3d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  police: {fileID: 628786485, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
-  terrorist: {fileID: 7714663546646569052, guid: 75a592440926f554182b72e0babeb95d,
-    type: 3}
-  hostage1: {fileID: 0}
-  hostage2: {fileID: 0}
-  spawnpointA: {fileID: 473315277}
-  spawnpointB: {fileID: 690185383}
-  spawnpointC: {fileID: 2135016193}
-  spawnpointD: {fileID: 840531500}
-  spawnpointE: {fileID: 874915362}
-  field1: {fileID: 1543254653}
-  field2: {fileID: 818946681}
-  field3: {fileID: 668299112}
-  field4: {fileID: 1526524409}
-  field5: {fileID: 753233851}
 --- !u!1001 &207665685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29247,19 +29211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6133733dc08b09843a6e67cd17459f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  SightNodeOffSet: {x: 0, y: 1, z: 0}
-  nodeRadiusVisualization: 0.1
-  alwaysDisplay: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  isActive: 1
-  isAdvancedCover: 1
-  angleForAdvancedCover: 100
-  advancedCoverDirection: {x: 0, y: 0, z: 1}
-  shouldAutoChooseDirection: 1
-  faceDir: 0
 --- !u!1001 &743928750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60585,12 +60536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d6431b759ec7b458398e57f2ed6b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  cameraSensitivity: 90
-  climbSpeed: 4
-  normalMoveSpeed: 10
-  slowMoveFactor: 0.25
-  fastMoveFactor: 3
 --- !u!81 &1562704684
 AudioListener:
   m_ObjectHideFlags: 0
@@ -63700,19 +63645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6133733dc08b09843a6e67cd17459f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  SightNodeOffSet: {x: 0, y: 1, z: 0}
-  nodeRadiusVisualization: 0.1
-  alwaysDisplay: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  isActive: 1
-  isAdvancedCover: 1
-  angleForAdvancedCover: 100
-  advancedCoverDirection: {x: 0, y: 0, z: 1}
-  shouldAutoChooseDirection: 1
-  faceDir: 0
 --- !u!1001 &1645441981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72487,19 +72419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6133733dc08b09843a6e67cd17459f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  SightNodeOffSet: {x: 0, y: 1, z: 0}
-  nodeRadiusVisualization: 0.1
-  alwaysDisplay: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  isActive: 1
-  isAdvancedCover: 1
-  angleForAdvancedCover: 100
-  advancedCoverDirection: {x: 0, y: 0, z: 1}
-  shouldAutoChooseDirection: 1
-  faceDir: 0
 --- !u!1001 &1868299817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75562,13 +75481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2324fb269f9bc345914ab84bc7481bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GeneratorAsset: {fileID: 0}
-  minDistForDynamicCoverSimilarity: 5
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  usePerformanceMode: 0
-  maximumtDistForParkour: 3
 --- !u!4 &1947416734
 Transform:
   m_ObjectHideFlags: 0
