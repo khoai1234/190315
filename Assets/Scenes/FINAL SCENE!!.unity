@@ -7319,6 +7319,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 628786485, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
+      propertyPath: m_Name
+      value: Paragon AI Agent 1 (AK-47) (FN)
+      objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: myFieldOfView
       value: 65
@@ -7379,21 +7383,17 @@ PrefabInstance:
       propertyPath: maxSkirmishDistFromTarget
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 628786485, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
-      propertyPath: m_Name
-      value: Paragon AI Agent 1 (AK-47) (FN)
-      objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -143.8
+      value: -138.23
       objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -37.92
+      value: -34.7
       objectReference: {fileID: 0}
     - target: {fileID: 628786496, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: m_LocalRotation.x
