@@ -7373,11 +7373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: myTeamID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: enemyTeamsIDs.Array.data[0]
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
@@ -30551,6 +30551,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: enemyTeamsIDs.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
+      propertyPath: myTeamID
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
