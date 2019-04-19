@@ -14,12 +14,13 @@ namespace TacticalAI
     public class TargetScript : MonoBehaviour
     {
 
-        public Transform targetObjectTransform;
-
-        public Transform myLOSTarget;
-        public float targetPriority = 1;
         public TacticalAI.BaseScript myAIBaseScript;
         public GameObject healthScriptHolder;
+
+        public Transform targetObjectTransform;
+        public float targetPriority = 1;
+        public Transform myLOSTarget;
+        public bool canAcceptDynamicObjectRequests = false;
 
         private int myUniqueID;
 
@@ -69,7 +70,6 @@ namespace TacticalAI
         [HideInInspector]
         public LayerMask layerMask;
 
-        public bool canAcceptDynamicObjectRequests = false;
 
 
 		public float maxDistToNoticeTarget = 9999f;
