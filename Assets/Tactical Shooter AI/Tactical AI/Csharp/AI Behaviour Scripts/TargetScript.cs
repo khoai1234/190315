@@ -59,6 +59,7 @@ namespace TacticalAI
         public float timeBetweenReactingToSounds = 15;
         private bool shouldReactToNewSound = true;
 
+
         public float maxLineOfSightChecksPerFrame = 3;
 
         public Transform eyeTransform;
@@ -77,6 +78,8 @@ namespace TacticalAI
         // Use this for initialization
         void Awake()
         {
+            //UnityEngine.Debug.Log(enemyTeamsIDs[0] + "   0");
+
             if (!healthScriptHolder)
                 healthScriptHolder = gameObject;
 
@@ -170,6 +173,12 @@ namespace TacticalAI
         //Update the local lists of allies and enemies.
         public void UpdateEnemyAndAllyLists(TacticalAI.Target[] a, TacticalAI.Target[] e)
         {
+            if (e != null) 
+                UnityEngine.Debug.Log(e.Length);
+            for (int i = 0; i < e.Length; ++i)
+            {
+                UnityEngine.Debug.Log("bbb" + e[i].teamID);
+            }
             if (myAIBaseScript)
             {
                 //allyTransforms = a;
