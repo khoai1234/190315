@@ -30557,6 +30557,10 @@ PrefabInstance:
       propertyPath: myTeamID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1694089279, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
+      propertyPath: m_Name
+      value: K20 (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
 --- !u!1001 &780850245
