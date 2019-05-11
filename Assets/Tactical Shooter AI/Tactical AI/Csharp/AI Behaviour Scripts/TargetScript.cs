@@ -80,6 +80,7 @@ namespace TacticalAI
         {
             //UnityEngine.Debug.Log(enemyTeamsIDs[0] + "   0");
 
+
             if (!healthScriptHolder)
                 healthScriptHolder = gameObject;
 
@@ -93,6 +94,7 @@ namespace TacticalAI
 
 
             //Add ourselves to the list of targets
+            //enemyTeamsIDs = new int[] {0};
             if (TacticalAI.ControllerScript.currentController)
                 myUniqueID = TacticalAI.ControllerScript.currentController.AddTarget(myTeamID, targetObjectTransform, this);
             else
@@ -121,6 +123,23 @@ namespace TacticalAI
                 StartCoroutine(TargetSelectionLoop());
                 //StartCoroutine(CountDownToTargetExperation());
             }
+        }
+        void Update()
+        {
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (enemyTeamsIDs[0] == 0)
+                    enemyTeamsIDs = new int[] { 1 };
+                else
+                    enemyTeamsIDs = new int[] { 0 };
+                UnityEngine.Debug.Log("dad la2222m" + enemyTeamsIDs[0]);
+                if (TacticalAI.ControllerScript.currentController)
+                    myUniqueID = TacticalAI.ControllerScript.currentController.AddTarget(myTeamID, targetObjectTransform, this);
+                else
+                    UnityEngine.Debug.LogWarning("No AI Controller Found!");
+            }
+
         }
 
         IEnumerator LoSLoop()
@@ -173,12 +192,15 @@ namespace TacticalAI
         //Update the local lists of allies and enemies.
         public void UpdateEnemyAndAllyLists(TacticalAI.Target[] a, TacticalAI.Target[] e)
         {
-            if (e != null) 
-                UnityEngine.Debug.Log(e.Length);
-            for (int i = 0; i < e.Length; ++i)
-            {
-                UnityEngine.Debug.Log("bbb" + e[i].teamID);
-            }
+            //e = ControllerScript.GetCurrentTargetsWithIDs(new int[] { 1, 3, 5, 7, 9 });
+
+            //if (e != null) 
+            //    UnityEngine.Debug.Log(e.Length);
+            //for (int i = 0; i < e.Length; ++i)
+            //{
+            //    UnityEngine.Debug.Log("bbb" + e[i].teamID);
+            //}
+
             if (myAIBaseScript)
             {
                 //allyTransforms = a;

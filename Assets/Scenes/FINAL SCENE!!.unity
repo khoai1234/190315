@@ -7355,6 +7355,10 @@ PrefabInstance:
       propertyPath: maxSkirmishDistFromTarget
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 628786493, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
+      propertyPath: myIdleBehaviour
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: alliedTeamsIDs.Array.size
       value: 0
@@ -30533,6 +30537,10 @@ PrefabInstance:
       propertyPath: maxSkirmishDistFromTarget
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 628786493, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
+      propertyPath: myIdleBehaviour
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 628786486, guid: ea9adceee6f96484f898e6c021fe8b2c, type: 3}
       propertyPath: alliedTeamsIDs.Array.size
       value: 0
@@ -44950,13 +44958,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165588265}
-  m_LocalRotation: {x: -0.60823494, y: -0.5957327, z: -0.11868189, w: -0.51094764}
-  m_LocalPosition: {x: -3.61, y: 15.02, z: -2.72}
+  m_LocalRotation: {x: -0.52333933, y: 0.033725657, z: -0.3516799, w: -0.7754353}
+  m_LocalPosition: {x: -203, y: -67, z: -697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 56.653004, y: 35.062, z: 68.118004}
 --- !u!1001 &1165914297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60797,7 +60805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562704682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -150.5, y: 3, z: -50.19}
+  m_LocalPosition: {x: -153.57, y: 2.11, z: -39.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
