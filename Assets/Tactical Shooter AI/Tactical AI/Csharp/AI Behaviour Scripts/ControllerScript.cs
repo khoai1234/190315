@@ -25,7 +25,7 @@ namespace TacticalAI
         public static bool pMode;
         public bool usePerformanceMode = false;
 
-        
+        public TacticalAI.TargetScript tar;
 
         // Use this for initialization
         void Awake()
@@ -48,7 +48,28 @@ namespace TacticalAI
             }
             coverNodeScripts = tempScripsList.ToArray();
         }
+        //private void Start()
+        //{
+        //    for (int y = 0; y < currentTargets.Count; y++)
+        //    {
+        //        UnityEngine.Debug.Log(currentTargets[y].teamID);
+        //    }
+        //}
+        //void Update()
+        //{
 
+
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        AddTarget(4, transform, tar);
+
+        //        for (int y = 0; y < currentTargets.Count; y++)
+        //        {
+        //            UnityEngine.Debug.Log(currentTargets[y].teamID);
+        //        }
+        //    }
+
+        //}
         //Updateing and adding to lists
         public void UpdateAllEnemiesEnemyLists()
         {

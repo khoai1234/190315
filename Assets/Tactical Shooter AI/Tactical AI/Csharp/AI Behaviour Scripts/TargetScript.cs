@@ -59,7 +59,6 @@ namespace TacticalAI
         public float timeBetweenReactingToSounds = 15;
         private bool shouldReactToNewSound = true;
 
-
         public float maxLineOfSightChecksPerFrame = 3;
 
         public Transform eyeTransform;
@@ -78,9 +77,6 @@ namespace TacticalAI
         // Use this for initialization
         void Awake()
         {
-            //UnityEngine.Debug.Log(enemyTeamsIDs[0] + "   0");
-
-
             if (!healthScriptHolder)
                 healthScriptHolder = gameObject;
 
@@ -124,23 +120,20 @@ namespace TacticalAI
                 //StartCoroutine(CountDownToTargetExperation());
             }
         }
-        void Update()
-        {
+        //void Update()
+        //{
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (enemyTeamsIDs[0] == 0)
-                    enemyTeamsIDs = new int[] { 1 };
-                else
-                    enemyTeamsIDs = new int[] { 0 };
-                UnityEngine.Debug.Log("dad la2222m" + enemyTeamsIDs[0]);
-                if (TacticalAI.ControllerScript.currentController)
-                    myUniqueID = TacticalAI.ControllerScript.currentController.AddTarget(myTeamID, targetObjectTransform, this);
-                else
-                    UnityEngine.Debug.LogWarning("No AI Controller Found!");
-            }
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        TacticalAI.ControllerScript.currentController.AddTarget(4, targetObjectTransform, this);
+        //        for (int y = 0; y < TacticalAI.ControllerScript.currentTargets.Count; y++)
+        //        {
+        //            UnityEngine.Debug.Log(currentTargets[y].teamID);
+        //        }
+        //    }
 
-        }
+
+        //}
 
         IEnumerator LoSLoop()
         {
