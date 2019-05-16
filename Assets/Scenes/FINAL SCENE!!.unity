@@ -7806,6 +7806,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   usePerformanceMode: 0
+  tar: {fileID: 0}
   maximumtDistForParkour: 3
 --- !u!4 &206903078
 Transform:
@@ -60724,7 +60725,7 @@ GameObject:
   - component: {fileID: 1562704683}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75731,6 +75732,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   usePerformanceMode: 0
+  tar: {fileID: 0}
   maximumtDistForParkour: 3
 --- !u!4 &1947416734
 Transform:
