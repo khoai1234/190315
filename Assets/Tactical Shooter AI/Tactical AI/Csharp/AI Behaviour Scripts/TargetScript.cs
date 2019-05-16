@@ -74,6 +74,8 @@ namespace TacticalAI
 
 		public float maxDistToNoticeTarget = 9999f;
 
+        public GameObject police;
+
         // Use this for initialization
         void Awake()
         {
@@ -122,20 +124,29 @@ namespace TacticalAI
         }
         void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //if (Input.GetMouseButtonDown(0))
+            //{
+            //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                RaycastHit hit = new RaycastHit();
+            //    RaycastHit hit = new RaycastHit();
 
-                if (Physics.Raycast(ray, out hit))
-                {
+            //    if (Physics.Raycast(ray, out hit))
+            //    {
+            //        int f1 = 3;
+            //        for (int i = 0; i < f1; i++)
+            //        {
+            //            //GameObject PolA = Instantiate(police, spawnpointA.position, spawnpointA.rotation) as GameObject;
+            //            GameObject PolA = Instantiate(police, new Vector3(hit.point.x + UnityEngine.Random.Range(1, 5),
+            //                 hit.point.y,
+            //                 hit.point.z + UnityEngine.Random.Range(1, 5)), transform.rotation) as GameObject;
 
-                    UnityEngine.Debug.Log("true" + hit.point);
-                }
+            //        }
 
-                //UnityEngine.Debug.Log(ray.dire);
-            }
+            //        UnityEngine.Debug.Log("true" + hit.point);
+            //    }
+
+            //    //UnityEngine.Debug.Log(ray.dire);
+            //}
 
             //    if (Input.GetKeyDown(KeyCode.Space))
             //    {
