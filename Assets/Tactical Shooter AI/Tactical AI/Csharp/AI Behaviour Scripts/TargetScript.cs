@@ -120,20 +120,35 @@ namespace TacticalAI
                 //StartCoroutine(CountDownToTargetExperation());
             }
         }
-        //void Update()
-        //{
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        //    if (Input.GetKeyDown(KeyCode.Space))
-        //    {
-        //        TacticalAI.ControllerScript.currentController.AddTarget(4, targetObjectTransform, this);
-        //        for (int y = 0; y < TacticalAI.ControllerScript.currentTargets.Count; y++)
-        //        {
-        //            UnityEngine.Debug.Log(currentTargets[y].teamID);
-        //        }
-        //    }
+                RaycastHit hit = new RaycastHit();
+
+                if (Physics.Raycast(ray, out hit))
+                {
+
+                    UnityEngine.Debug.Log("true" + hit.point);
+                }
+
+                //UnityEngine.Debug.Log(ray.dire);
+            }
+
+            //    if (Input.GetKeyDown(KeyCode.Space))
+            //    {
+            //        //TacticalAI.ControllerScript.currentController.AddTarget(4, targetObjectTransform, this);
+            //        TacticalAI.ControllerScript.currentController.RemoveTargetFromTargetList(0);
+            //        //for (int y = 0; y < TacticalAI.ControllerScript.currentTargets.Count; y++)
+            //        //{
+            //        //    UnityEngine.Debug.Log(TacticalAI.ControllerScript.currentTargets[y].teamID);
+            //        //}
+            //    }
 
 
-        //}
+        }
 
         IEnumerator LoSLoop()
         {
