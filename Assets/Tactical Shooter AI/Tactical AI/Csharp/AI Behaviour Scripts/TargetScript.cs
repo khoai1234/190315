@@ -14,13 +14,12 @@ namespace TacticalAI
     public class TargetScript : MonoBehaviour
     {
 
+        public Transform targetObjectTransform;
+
+        public Transform myLOSTarget;
+        public float targetPriority = 1;
         public TacticalAI.BaseScript myAIBaseScript;
         public GameObject healthScriptHolder;
-
-        public Transform targetObjectTransform;
-        public float targetPriority = 1;
-        public Transform myLOSTarget;
-        public bool canAcceptDynamicObjectRequests = false;
 
         private int myUniqueID;
 
@@ -70,11 +69,10 @@ namespace TacticalAI
         [HideInInspector]
         public LayerMask layerMask;
 
+        public bool canAcceptDynamicObjectRequests = false;
 
 
 		public float maxDistToNoticeTarget = 9999f;
-
-        public GameObject police;
 
         // Use this for initialization
         void Awake()
@@ -92,7 +90,6 @@ namespace TacticalAI
 
 
             //Add ourselves to the list of targets
-            //enemyTeamsIDs = new int[] {0};
             if (TacticalAI.ControllerScript.currentController)
                 myUniqueID = TacticalAI.ControllerScript.currentController.AddTarget(myTeamID, targetObjectTransform, this);
             else
@@ -121,44 +118,6 @@ namespace TacticalAI
                 StartCoroutine(TargetSelectionLoop());
                 //StartCoroutine(CountDownToTargetExperation());
             }
-        }
-        void Update()
-        {
-            //if (Input.GetMouseButtonDown(0))
-            //{
-            //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            //    RaycastHit hit = new RaycastHit();
-
-            //    if (Physics.Raycast(ray, out hit))
-            //    {
-            //        int f1 = 3;
-            //        for (int i = 0; i < f1; i++)
-            //        {
-            //            //GameObject PolA = Instantiate(police, spawnpointA.position, spawnpointA.rotation) as GameObject;
-            //            GameObject PolA = Instantiate(police, new Vector3(hit.point.x + UnityEngine.Random.Range(1, 5),
-            //                 hit.point.y,
-            //                 hit.point.z + UnityEngine.Random.Range(1, 5)), transform.rotation) as GameObject;
-
-            //        }
-
-            //        UnityEngine.Debug.Log("true" + hit.point);
-            //    }
-
-            //    //UnityEngine.Debug.Log(ray.dire);
-            //}
-
-            //    if (Input.GetKeyDown(KeyCode.Space))
-            //    {
-            //        //TacticalAI.ControllerScript.currentController.AddTarget(4, targetObjectTransform, this);
-            //        TacticalAI.ControllerScript.currentController.RemoveTargetFromTargetList(0);
-            //        //for (int y = 0; y < TacticalAI.ControllerScript.currentTargets.Count; y++)
-            //        //{
-            //        //    UnityEngine.Debug.Log(TacticalAI.ControllerScript.currentTargets[y].teamID);
-            //        //}
-            //    }
-
-
         }
 
         IEnumerator LoSLoop()
@@ -211,15 +170,6 @@ namespace TacticalAI
         //Update the local lists of allies and enemies.
         public void UpdateEnemyAndAllyLists(TacticalAI.Target[] a, TacticalAI.Target[] e)
         {
-            //e = ControllerScript.GetCurrentTargetsWithIDs(new int[] { 1, 3, 5, 7, 9 });
-
-            //if (e != null) 
-            //    UnityEngine.Debug.Log(e.Length);
-            //for (int i = 0; i < e.Length; ++i)
-            //{
-            //    UnityEngine.Debug.Log("bbb" + e[i].teamID);
-            //}
-
             if (myAIBaseScript)
             {
                 //allyTransforms = a;

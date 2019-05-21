@@ -594,15 +594,6 @@ namespace TacticalAI
                     }
                 }
             }
-
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-
-                sprintSpeed = 6.0f;
-                runSpeed = 5.0f;
-
-        //UnityEngine.Debug.Log(ray.dire);
-            }
         }
 
 
