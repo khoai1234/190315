@@ -185,6 +185,8 @@ namespace TacticalAI
             }
         }
 
+
+
         //Start the cycle after everything else is initialized	
         void Start()
         {
