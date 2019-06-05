@@ -126,14 +126,14 @@ public class SpawnController : MonoBehaviour
             {
                 //GameObject Hosta1 = Instantiate(hostage1, spawnpointE.position, spawnpointE.rotation) as GameObject;
                 Debug.Log("1");
-                GameObject Hosta1 = Instantiate(hostage1, new Vector3(spawnpointE.position.x + UnityEngine.Random.Range(1,4), spawnpointE.position.y, spawnpointE.position.z + UnityEngine.Random.Range(1,4)), spawnpointE.rotation) as GameObject;
+                GameObject Hosta1 = Instantiate(hostage1, new Vector3(spawnpointE.position.x + UnityEngine.Random.Range(1,3), spawnpointE.position.y, spawnpointE.position.z + UnityEngine.Random.Range(1,4)), spawnpointE.rotation) as GameObject;
             }
 //            if (x == 2)
             else
             {
                 //GameObject Hosta2 = Instantiate(hostage2, spawnpointF.position, spawnpointF.rotation) as GameObject;
                 Debug.Log("2");
-                GameObject Hosta2 = Instantiate(hostage2, new Vector3(spawnpointF.position.x + UnityEngine.Random.Range(1,4), spawnpointF.position.y, spawnpointF.position.z + UnityEngine.Random.Range(1,4)), spawnpointF.rotation) as GameObject;
+                GameObject Hosta2 = Instantiate(hostage2, new Vector3(spawnpointF.position.x + UnityEngine.Random.Range(1,3), spawnpointF.position.y, spawnpointF.position.z + UnityEngine.Random.Range(1,4)), spawnpointF.rotation) as GameObject;
             }
            // x = 2;
             //GameObject PolA = Instantiate(police, spawnpointA.position, spawnpointA.rotation) as GameObject;
