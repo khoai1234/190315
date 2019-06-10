@@ -31,7 +31,7 @@ namespace TacticalAI
         void Awake()
         {
             currentController = this;
-            transform.tag = "AI Controller";
+            //transform.tag = "AI Controller";
             GameObject[] tempCoverNodeObjects = GameObject.FindGameObjectsWithTag("Cover");
 
             ControllerScript.pMode = usePerformanceMode;

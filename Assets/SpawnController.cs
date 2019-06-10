@@ -29,6 +29,7 @@ public class SpawnController : MonoBehaviour
     public InputField field4;
     public InputField field5;
     // Start is called before the first frame update
+    int tag_object = 0;
     void Start()
     {
 
@@ -39,6 +40,7 @@ public class SpawnController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit hit = new RaycastHit();
@@ -48,6 +50,8 @@ public class SpawnController : MonoBehaviour
                 int f1 = 3;
                 for (int i = 0; i < f1; i++)
                 {
+                    tag_object++;
+                    police.gameObject.name = tag_object.ToString();
                     //GameObject PolA = Instantiate(police, spawnpointA.position, spawnpointA.rotation) as GameObject;
                     GameObject PolA = Instantiate(police, new Vector3(hit.point.x + UnityEngine.Random.Range(1, 5),
                          hit.point.y,
@@ -55,10 +59,11 @@ public class SpawnController : MonoBehaviour
 
                 }
 
-                UnityEngine.Debug.Log("true" + hit.point);
+                //UnityEngine.Debug.Log("true" + hit.point);
             }
 
-            //UnityEngine.Debug.Log(ray.dire);
+
+            UnityEngine.Debug.Log(tag_object);
         }
         // public int randomX = UnityEngine.Random.Range(0, 2);
         //public int randomZ = UnityEngine.Random.Range(0, 2);

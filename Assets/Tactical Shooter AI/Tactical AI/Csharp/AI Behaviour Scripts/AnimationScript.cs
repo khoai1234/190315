@@ -145,6 +145,23 @@ namespace TacticalAI
             AnimateAI();
             //This has to be in late update or we get nasty non-normalized quaternions.
             RotateAI();
+
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+
+                GameObject varGameObject = GameObject.Find("CS");
+                if (varGameObject != null)
+                {
+                    varGameObject.GetComponent<TacticalAI.BaseScript>().enabled = true;
+                    varGameObject.GetComponent<TacticalAI.GunScript>().enabled = true;
+                } else
+                    UnityEngine.Debug.Log(this.GetType().ToString());
+
+
+
+                
+            }
+
         }
 
 
