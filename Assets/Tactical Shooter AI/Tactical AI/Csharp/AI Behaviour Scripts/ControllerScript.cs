@@ -48,6 +48,24 @@ namespace TacticalAI
             }
             coverNodeScripts = tempScripsList.ToArray();
         }
+        void LateUpdate()
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+
+                GameObject[] varGameObject = GameObject.FindGameObjectsWithTag("3");
+
+                UnityEngine.Debug.Log(varGameObject.Length);
+
+                foreach (GameObject game in varGameObject){
+                    UnityEngine.Debug.Log(game.gameObject.name);
+                    game.GetComponent<TacticalAI.BaseScript>().enabled = false;
+                    game.GetComponent<TacticalAI.GunScript>().enabled = false;
+                }
+
+            }
+
+        }
 
         //Updateing and adding to lists
         public void UpdateAllEnemiesEnemyLists()

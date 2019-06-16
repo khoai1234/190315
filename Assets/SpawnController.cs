@@ -51,11 +51,12 @@ public class SpawnController : MonoBehaviour
                 for (int i = 0; i < f1; i++)
                 {
                     tag_object++;
-                    police.gameObject.name = tag_object.ToString();
+                    terrorist.gameObject.name = tag_object.ToString();
                     //GameObject PolA = Instantiate(police, spawnpointA.position, spawnpointA.rotation) as GameObject;
-                    GameObject PolA = Instantiate(police, new Vector3(hit.point.x + UnityEngine.Random.Range(1, 5),
+                    GameObject PolA = Instantiate(terrorist, new Vector3(hit.point.x + UnityEngine.Random.Range(1, 5),
                          hit.point.y,
                          hit.point.z + UnityEngine.Random.Range(1, 5)), transform.rotation) as GameObject;
+                    PolA.gameObject.tag = "3";
 
                 }
 
@@ -63,7 +64,7 @@ public class SpawnController : MonoBehaviour
             }
 
 
-            UnityEngine.Debug.Log(tag_object);
+            //UnityEngine.Debug.Log(tag_object);
         }
         // public int randomX = UnityEngine.Random.Range(0, 2);
         //public int randomZ = UnityEngine.Random.Range(0, 2);

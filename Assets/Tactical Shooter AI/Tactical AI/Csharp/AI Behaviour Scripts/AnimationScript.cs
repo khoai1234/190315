@@ -57,6 +57,8 @@ namespace TacticalAI
         private int rightHash;
         private int leftHash;
 
+        GameObject[] varGameObject;
+
         //Dynamic objects
         public float maxAngleDeviation = 10;
         Quaternion currRotRequired;
@@ -146,21 +148,22 @@ namespace TacticalAI
             //This has to be in late update or we get nasty non-normalized quaternions.
             RotateAI();
 
-            if (Input.GetKeyDown(KeyCode.M))
-            {
+            //if (Input.GetKeyDown(KeyCode.M))
+            //{
 
-                GameObject varGameObject = GameObject.Find("CS");
-                if (varGameObject != null)
-                {
-                    varGameObject.GetComponent<TacticalAI.BaseScript>().enabled = true;
-                    varGameObject.GetComponent<TacticalAI.GunScript>().enabled = true;
-                } else
-                    UnityEngine.Debug.Log(this.GetType().ToString());
+            //    varGameObject = GameObject.FindGameObjectsWithTag("1");
+            //    if (varGameObject != null)
+            //    {
+            //        UnityEngine.Debug.Log("co tab");
+            //        varGameObject.GetComponent<TacticalAI.BaseScript>().enabled = true;
+            //        varGameObject.GetComponent<TacticalAI.GunScript>().enabled = true;
+            //    } else
+            //        UnityEngine.Debug.Log(this.GetType().ToString());
 
 
 
                 
-            }
+            //}
 
         }
 
